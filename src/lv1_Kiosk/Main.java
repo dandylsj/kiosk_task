@@ -2,12 +2,11 @@ package lv1_Kiosk;
 
 import java.util.Scanner;
 
-//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
-// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);//스캐너 인스턴스 생성
+
         System.out.println("[ SHAKESHACK MENU ]");
         System.out.println("1. ShackBurger   | W 6.9 |");
         System.out.println("2. SmokeShack    | W 8.9 | ");
@@ -17,8 +16,8 @@ public class Main {
 
        while(true){
            System.out.println("원하는 메뉴의 번호를 선택하면 자세한 설명이 나옵니다.");
-           int selectMenuNumber = sc.nextInt();
-        switch (selectMenuNumber) {
+           int selectMenuNumber = sc.nextInt(); //메뉴 숫자를 받아 출력
+        switch (selectMenuNumber) { //위에서 입력한 정수 값에 맞는 메뉴를 출력해줌
             case (1):
                 System.out.println("1. ShackBurger   | W 6.9 | 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
                 break;
@@ -33,10 +32,10 @@ public class Main {
                 break;
             case (0):
                 System.out.println("0.키오스크를 종료합니다.");
-                System.exit(0);
+                System.exit(0); //시스템 종료 선언
                 break;
             default:
-                System.out.println("잘못된 입력값 입니다.");
+                System.out.println("잘못된 입력값 입니다."); //다른값을 입력하면 다시 선택할 수 있게함
                 break;
         }
        }
