@@ -33,9 +33,11 @@ public class MenuItem {
 
     //3.기능
     String getName() { //public 이라는 것은 다른 lv의 키오스크 에서도 접근이 가능하기 때문에 안된다.
+
         return name;
     }
     double getPrice() {
+
         return price;
     }
     String getContent() {

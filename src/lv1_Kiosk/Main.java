@@ -7,14 +7,14 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);//스캐너 인스턴스 생성
 
-        System.out.println("[ SHAKESHACK MENU ]");
-        System.out.println("1. ShackBurger   | W 6.9 |");
-        System.out.println("2. SmokeShack    | W 8.9 | ");
-        System.out.println("3. Cheeseburger  | W 6.9 | ");
-        System.out.println("4. Hamburger     | W 5.4 | ");
-        System.out.println("0. 종료");
 
        while(true) {
+           System.out.println("[ SHAKESHACK MENU ]");
+           System.out.println("1. ShackBurger   | W 6.9 |");
+           System.out.println("2. SmokeShack    | W 8.9 | ");
+           System.out.println("3. Cheeseburger  | W 6.9 | ");
+           System.out.println("4. Hamburger     | W 5.4 | ");
+           System.out.println("0. 종료");
            System.out.println("원하는 메뉴의 번호를 선택하면 자세한 설명이 나옵니다.");
            int selectMenuNumber = sc.nextInt(); //메뉴 숫자를 받아 출력
            switch (selectMenuNumber) { //위에서 입력한 정수 값에 맞는 메뉴를 출력해줌

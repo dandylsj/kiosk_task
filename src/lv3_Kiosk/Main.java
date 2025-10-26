@@ -14,12 +14,13 @@ public class Main {
         menuItems.add(new MenuItem("Cheeseburger", 6.9, "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거"));
         menuItems.add(new MenuItem("Hamburger", 6.9, "비프패티를 기반으로 야채가 들어간 기본버거"));
 
-//            MenuItem menuItem = new MenuItem("lee",6.5,"아무거나");
+        //위 내용을 풀어서 사용할 경우 아래 처럼 사용됨
+//            MenuItem menuItem = new MenuItem("ShackBurger",6.5,"토마토, 양상추, 쉑소스가 토핑된 치즈버거");
 //            menuItems.add(menuItem);
 
         Kiosk kiosk = new Kiosk(menuItems); //Kiosk 객체를 생성하고 사용하는 main 함수에서 객체를 생성할 때 값을 넘겨줍니다.
 
-        kiosk.start();
+        kiosk.start();  //kiosk의 클래스를 시작하는 start 함수
     }
 }
 

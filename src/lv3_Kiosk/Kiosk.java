@@ -25,13 +25,13 @@ public class Kiosk {
         // 반복문을 활용해 List 안에 있는 MenuItem을 하나씩 출력
         while (true) {
             System.out.println("[ SHAKESHACK MENU ]");
-            for (int i = 0; i < menuItems.size(); i++) {  //메뉴 출력 for 문
+            for (int i = 0; i < menuItems.size(); i++) {  //menuItems의 배열의 사이즈 만큼 최대값을 두고 출력한다.
                 System.out.println(i + 1 + "." + menuItems.get(i).getName() + "\t | W" + menuItems.get(i).getPrice() + " | " + menuItems.get(i).getContent() + "|");
-            }
+            }  //i + 1 은 0번 배열이 1번으로 출력이 되야하기 때문에 추가, get 이라는 함수는 i 값배열의 getname,getPrice,getContent 를 출력 하겠다.
             System.out.println("0 을 누르면 키오스크를 종료합니다.");
             System.out.println("원하는 메뉴의 번호를 선택하면 자세한 설명이 나옵니다.");
             int selectMenuNumber = sc.nextInt(); //메뉴 숫자를 받아 출력
-            if (selectMenuNumber == 0) {
+            if (selectMenuNumber == 0) { //0을 입력하면 키오스크 종료
                 System.out.println("키오스크를 종료합니다.");
                 System.exit(0); //시스템 종료 선언
             } else { // 정수를 입력할 경우 해당 숫자의 메뉴 번호를 출력함
