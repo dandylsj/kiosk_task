@@ -14,13 +14,13 @@ public class MenuItem {
     }
 
     //3.기능
-    public String getName(){
+    String getName(){
         return name;
     }
-    public double getPrice(){
+    double getPrice(){
         return price;
     }
-    public String getContent(){
+    String getContent(){
         return content;
     }
 

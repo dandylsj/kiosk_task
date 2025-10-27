@@ -35,7 +35,8 @@ public class Kiosk {
                 System.out.println("키오스크를 종료합니다.");
                 System.exit(0); //시스템 종료 선언
             } else { // 정수를 입력할 경우 해당 숫자의 메뉴 번호를 출력함
-                System.out.println((selectMenuNumber) + "." + menuItems.get(selectMenuNumber - 1).getName() + "\t | W" + menuItems.get(selectMenuNumber - 1).getPrice() + " | " + menuItems.get(selectMenuNumber - 1).getContent() + "|");
+                System.out.print("현재 선택하신 메뉴: ");
+                System.out.println((selectMenuNumber) + "." + menuItems.get(selectMenuNumber - 1).getName() + "\t | W" + menuItems.get(selectMenuNumber - 1).getPrice() + " | " + menuItems.get(selectMenuNumber - 1).getContent() + "|\n");
             }
         }
     }
