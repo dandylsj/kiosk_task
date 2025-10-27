@@ -22,7 +22,7 @@ public class Kiosk {
     //3. 기능 (Method)
     public void start() { //main 함수에서 관리하던 입력과 반복문 로직은 이제 start 함수를 만들어 관리합니다.
 
-        Menu menu1 = topMenu.get(0); //카테고리 메뉴의 0번째 배열 불러오기
+        Menu menu1 = topMenu.get(0);//카테고리 메뉴의 0번째 배열 불러오기
 
         //MenuItem 클래스 인스턴스
 
@@ -38,9 +38,16 @@ public class Kiosk {
                 System.out.println("키오스크를 종료합니다.");
                 System.exit(0); //시스템 종료 선언
             } else if(selectTopMenuNumber == 1){ //1을 누를경우 1번의 버거 하위메뉴들이 출력된다.
-                menu1.subMenuItems();
+                System.out.println("[" +  topMenu.get(0).getTopMenu() + "MENU" + "]");
+                menu1.burgerMenuItems();
+            } else if(selectTopMenuNumber == 2) { //2를 누를경우 2번의 음료 하위메뉴들이 출력된다.
+                System.out.println("[" +  topMenu.get(1).getTopMenu() + "MENU" + "]");
+                menu1.drinkMenuItems();
+            } else if(selectTopMenuNumber == 3) { //3을 누를경우 3번의 디저트 하위메뉴들이 출력된다.
+                System.out.println("[" +  topMenu.get(2).getTopMenu() + "MENU" + "]");
+                menu1.dessertMenuItems();
             }
-                // 정수를 입력할 경우 해당 숫자의 메뉴 번호를 출력함
+
         }
     }
 }
