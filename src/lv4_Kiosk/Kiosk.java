@@ -10,7 +10,7 @@ public class Kiosk {
     //1.속성 (Field)
     private Menu selectedCategory; //메뉴카테고리 선택값을 위한 속성
     private List<Menu> category; //카테고리 메뉴(상위 메뉴)의 배열을 불러옴
-    Scanner sc = new Scanner(System.in); // Scanner 선언
+    private Scanner sc = new Scanner(System.in); // Scanner 선언
 
 
     //2.생성자 (Constructor)
